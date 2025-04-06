@@ -111,7 +111,7 @@ struct ContentView: View {
 class GeminiManager {
     
     static let shared = GeminiManager()
-    private let apiKey = "AIzaSyARn6CiuuHSFXSRSk-qtEn2L-7uDbI2Ibc"
+    private let apiKey = "API-KEY"
     
     func sendPrompt(_ prompt: String, completion: @escaping (String?) -> Void) {
         guard let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=\(apiKey)") else {
